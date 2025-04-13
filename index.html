@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upcoming-events.html">Upcoming Events</a></li>
+            <li><a href="registered-events.html">Registered Events</a></li>
+        </ul>
+    </nav>
+    <section class="home-section">
+        <h1>Welcome to Our Event Management System!</h1>
+        <p>Enjoy Amazing Events 🎉</p>
+        <div class="event-timing">
+            <h2>Today's Event</h2>
+            <p><strong>Event Name:</strong> Tech Conference 2025</p>
+            <p><strong>Start Time:</strong> 10:00 AM</p>
+            <p><strong>End Time:</strong> 4:00 PM</p>
+            <p><strong>Type:</strong> Technology & Innovation</p>
+        </div>
+        <button id="submit">Register Now</button>
+    </section>
+   <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const registerButton = document.getElementById("submit");
+            registerButton.addEventListener("click", function() {
+                localStorage.setItem('selectedEvent', 'Tech Conference 2025');
+                window.location.href = "registered-events.html"; 
+            });
+        });
+    </script>
+</body>
+</html>

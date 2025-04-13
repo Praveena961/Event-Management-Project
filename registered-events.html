@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upcoming-events.html">Upcoming Events</a></li>
+            <li><a href="registered-events.html">Registered Events</a></li>
+        </ul>
+    </nav>
+    <button id="downloadButton" class="download-btn">Download Registrations</button>
+    <div class="content">
+        <h1>Register for Event</h1>
+        <form id="registrationForm">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="event">Event Name:</label><br>
+            <input type="text" id="event" name="event" required><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+   <script src="registered-events.js"></script>
+</body>
+</html>
